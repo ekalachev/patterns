@@ -1,4 +1,5 @@
 ﻿using Patterns.AbstractFactory;
+using Patterns.Builder;
 using Patterns.Prototype;
 using Patterns.TemplateMethod;
 using System;
@@ -9,8 +10,20 @@ namespace Patterns
     {
         static void Main(string[] args)
         {
-            AbstractFactory();
+            Builder();
 
+            Console.ReadLine();
+        }
+
+        static void Builder()
+        {
+            var director = new Director();
+
+            var sportCar = director.ConstructSportCar(new CarBuilder());
+            var manual = director.ConstructSportCar(new ManualBuilder());
+
+            Console.WriteLine(sportCar);
+            Console.WriteLine(manual);
             Console.ReadLine();
         }
 
