@@ -1,4 +1,5 @@
 ﻿using Patterns.Prototype;
+using Patterns.TemplateMethod;
 using System;
 
 namespace Patterns
@@ -7,9 +8,15 @@ namespace Patterns
     {
         static void Main(string[] args)
         {
-            Prototype();
+            TemplateMethod();
 
             Console.ReadLine();
+        }
+
+        static void TemplateMethod()
+        {
+            var chess = new Chess();
+            chess.Run();
         }
 
         static void Prototype()
