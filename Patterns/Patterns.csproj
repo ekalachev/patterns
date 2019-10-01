@@ -9,4 +9,24 @@
     <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Adapter\" />
+    <Folder Include="Decorator\" />
+    <Folder Include="Facade\" />
+    <Folder Include="ChainOfResponsibility\" />
+    <Folder Include="Command\" />
+    <Folder Include="Iterator\" />
+    <Folder Include="Momento\" />
+    <Folder Include="Mediator\" />
+    <Folder Include="Flyweight\" />
+    <Folder Include="Composite\" />
+    <Folder Include="Bridge\" />
+    <Folder Include="FactoryMethod\" />
+    <Folder Include="Visitor\" />
+    <Folder Include="Strategy\" />
+    <Folder Include="State\" />
+    <Folder Include="Observer\" />
+    <Folder Include="Proxy\" />
+  </ItemGroup>
+
 </Project>

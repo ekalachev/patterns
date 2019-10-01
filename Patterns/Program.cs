@@ -10,7 +10,22 @@ namespace Patterns
     {
         static void Main(string[] args)
         {
-            Builder();
+            Singleton();
+
+            Console.ReadLine();
+        }
+
+        static void Singleton()
+        {
+            var singleton = Patterns.Singleton.Singleton.Instance;
+            var singleton2 = Patterns.Singleton.Singleton.Instance;
+
+            Console.WriteLine(singleton == singleton2);
+
+            var singletonLazy = Patterns.Singleton.SingletonLazy.Instance;
+            var singletonLazy2 = Patterns.Singleton.SingletonLazy.Instance;
+
+            Console.WriteLine(singletonLazy == singletonLazy2);
 
             Console.ReadLine();
         }
