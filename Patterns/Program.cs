@@ -1,4 +1,5 @@
-﻿using Patterns.Prototype;
+﻿using Patterns.AbstractFactory;
+using Patterns.Prototype;
 using Patterns.TemplateMethod;
 using System;
 
@@ -8,7 +9,32 @@ namespace Patterns
     {
         static void Main(string[] args)
         {
-            TemplateMethod();
+            AbstractFactory();
+
+            Console.ReadLine();
+        }
+
+        static void AbstractFactory()
+        {
+            var os = "";
+            Console.WriteLine("Enter your OS (mac or win): ");
+
+            do
+            {
+                os = Console.ReadLine();
+            }
+            while (os != "win" && os != "mac") ;
+
+            IGUIFactory factory;
+
+            if (os == "mac")
+                factory = new MacFactory();
+            else
+                factory = new WinFactory();
+
+            var app = new Application(factory);
+            app.CreateUI();
+            app.Paint();
 
             Console.ReadLine();
         }
