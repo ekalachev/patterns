@@ -1,0 +1,1 @@
+﻿Single responsibility principle specifies that any particular class should have just a single reason to change.
