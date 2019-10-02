@@ -1,0 +1,1 @@
+﻿The idea is that you should be able to substitute a base type for a subtype.

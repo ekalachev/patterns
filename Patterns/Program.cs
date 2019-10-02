@@ -1,6 +1,7 @@
 ﻿using DesignPatterns.AbstractFactory;
 using DesignPatterns.Builder;
 using DesignPatterns.Prototype;
+using DesignPatterns.SOLID.LiskovSubstitution;
 using DesignPatterns.SOLID.OpenClosed;
 using DesignPatterns.TemplateMethod;
 using System;
@@ -11,10 +12,36 @@ namespace DesignPatterns
     {
         static void Main(string[] args)
         {
-            SOLIDOpenClosed();
+            SOLIDLiskovSubstitutuion();
 
             Console.ReadLine();
         }
+
+        static void SOLIDLiskovSubstitutuion()
+        {
+            RectangleWithViolatingLiskovSubstitutionPrinciple rcWithViolatingLiskovSubstitutionPrinciple = new RectangleWithViolatingLiskovSubstitutionPrinciple(2, 3);
+            Console.WriteLine($"{rcWithViolatingLiskovSubstitutionPrinciple} has area {AreaWithViolatingLiskovSubstitutionPrinciple(rcWithViolatingLiskovSubstitutionPrinciple)}");
+
+            // should be able to substitute a base type for a subtype
+            /*Square*/
+            RectangleWithViolatingLiskovSubstitutionPrinciple sqWithViolatingLiskovSubstitutionPrinciple = new RectangleWithViolatingLiskovSubstitutionPrinciple();
+            sqWithViolatingLiskovSubstitutionPrinciple.Width = 4;
+            Console.WriteLine($"{sqWithViolatingLiskovSubstitutionPrinciple } has area {AreaWithViolatingLiskovSubstitutionPrinciple(sqWithViolatingLiskovSubstitutionPrinciple)}");
+
+            // Without violating Liskov Substitutuion Principle
+
+            Rectangle rc = new Rectangle(2, 3);
+            Console.WriteLine($"{rc} has area {Area(rc)}");
+
+            // should be able to substitute a base type for a subtype
+            /*Square*/
+            Rectangle sq = new Square();
+            sq.Width = 4;
+            Console.WriteLine($"{sq} has area {Area(sq)}");
+        }
+
+        static public int Area(Rectangle r) => r.Width * r.Height;
+        static public int AreaWithViolatingLiskovSubstitutionPrinciple(RectangleWithViolatingLiskovSubstitutionPrinciple r) => r.Width * r.Height;
 
         static void SOLIDOpenClosed()
         {
