@@ -1,10 +1,10 @@
-﻿using Patterns.AbstractFactory;
-using Patterns.Builder;
-using Patterns.Prototype;
-using Patterns.TemplateMethod;
+﻿using DesignPatterns.AbstractFactory;
+using DesignPatterns.Builder;
+using DesignPatterns.Prototype;
+using DesignPatterns.TemplateMethod;
 using System;
 
-namespace Patterns
+namespace DesignPatterns
 {
     class Program
     {
@@ -17,13 +17,13 @@ namespace Patterns
 
         static void Singleton()
         {
-            var singleton = Patterns.Singleton.Singleton.Instance;
-            var singleton2 = Patterns.Singleton.Singleton.Instance;
+            var singleton = DesignPatterns.Singleton.Singleton.Instance;
+            var singleton2 = DesignPatterns.Singleton.Singleton.Instance;
 
             Console.WriteLine(singleton == singleton2);
 
-            var singletonLazy = Patterns.Singleton.SingletonLazy.Instance;
-            var singletonLazy2 = Patterns.Singleton.SingletonLazy.Instance;
+            var singletonLazy = DesignPatterns.Singleton.SingletonLazy.Instance;
+            var singletonLazy2 = DesignPatterns.Singleton.SingletonLazy.Instance;
 
             Console.WriteLine(singletonLazy == singletonLazy2);
 

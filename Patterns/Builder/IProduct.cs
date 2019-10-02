@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Patterns.Builder
+namespace DesignPatterns.Builder
 {
     interface IProduct
     {

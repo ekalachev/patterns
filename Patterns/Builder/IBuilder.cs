@@ -1,4 +1,4 @@
-﻿namespace Patterns.Builder
+﻿namespace DesignPatterns.Builder
 {
     interface IBuilder
     {

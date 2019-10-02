@@ -1,4 +1,4 @@
-﻿namespace Patterns.Prototype
+﻿namespace DesignPatterns.Prototype
 {
     class Client
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Patterns.Builder
+namespace DesignPatterns.Builder
 {
     class CarBuilder : IBuilder
     {

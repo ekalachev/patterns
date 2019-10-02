@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace Patterns.Prototype
+namespace DesignPatterns.Prototype
 {
     static class PrototypeExtensions
     {

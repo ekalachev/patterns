@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Patterns.TemplateMethod
+namespace DesignPatterns.TemplateMethod
 {
     abstract class Game
     {

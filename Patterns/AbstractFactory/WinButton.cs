@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Patterns.AbstractFactory
+namespace DesignPatterns.AbstractFactory
 {
     class WinButton : IButton
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Patterns.Singleton
+namespace DesignPatterns.Singleton
 {
     public sealed class SingletonLazy
     {

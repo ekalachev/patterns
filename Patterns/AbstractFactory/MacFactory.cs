@@ -1,4 +1,4 @@
-﻿namespace Patterns.AbstractFactory
+﻿namespace DesignPatterns.AbstractFactory
 {
     class MacFactory : IGUIFactory
     {
