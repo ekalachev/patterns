@@ -1,1 +1,3 @@
-﻿Single responsibility principle specifies that any particular class should have just a single reason to change.
+﻿The Single responsibility principle specifies that any particular class should have just a single reason to change.
+
+Rus: Принцип единственной ответственности — принцип ООП, обозначающий, что каждый объект должен иметь одну ответственность и эта ответственность должна быть полностью инкапсулирована в класс. Все его поведения должны быть направлены исключительно на обеспечение этой ответственности.
